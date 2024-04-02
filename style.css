@@ -1,0 +1,205 @@
+@font-face {
+  font-family: Autography;
+  src: url(./font/Autography.otf);
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  color: #27221f;
+  font-family: Autography;
+}
+
+/*header*/
+
+header {
+  background-color: #fcf5e5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 50px;
+}
+
+a {
+  width: 20%;
+  text-align: center;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 2px solid red;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  padding: 50px 0px;
+}
+
+h3 {
+  font-size: 40px;
+}
+
+footer h2 {
+  font-size: 32px;
+}
+
+/*section 1*/
+
+.currently-reading {
+  background-color: #fcf5e5;
+  height: 2100px;
+}
+
+.current-boxes {
+  height: 1900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box {
+  height: 600px;
+  width: 500px;
+  contain: content;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+img {
+  height: 100%;
+}
+
+.box-text {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  align-self: flex-end;
+}
+
+.box-text:hover,
+.small-box,
+.medium-box {
+  cursor: pointer;
+}
+
+/*section 2*/
+
+.tbr {
+  height: 800px;
+  background-color: #c4a484;
+}
+
+.tbr-boxes {
+  height: 500px;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+
+.medium-box {
+  height: 200px;
+  width: 200px;
+}
+
+/*section 3*/
+
+.fave-books {
+  height: 750px;
+  background-color: #a18072;
+}
+
+.fave-boxes {
+  height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.small-box {
+  height: 150px;
+  width: 150px;
+  margin: 0px 20px;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+/*footer*/
+
+footer {
+  height: 150px;
+  background-color: #fcf5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 1024px) {
+  .currently-reading {
+    height: 1000px;
+  }
+  .current-boxes {
+    height: 800px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+  }
+  .box {
+    height: 700px;
+    width: 30vw;
+    margin: 20px 0px;
+  }
+  .tbr {
+    height: 420px;
+  }
+  .tbr-boxes {
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .medium-box {
+    height: 150px;
+    width: 150px;
+  }
+  .fave-books {
+    height: 1100px;
+  }
+  .fave-boxes {
+    height: 900px;
+  }
+  .small-box {
+    height: 200px;
+    width: 200px;
+    margin: 10px 50px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .fave-books {
+    height: 800px;
+  }
+  .fave-boxes {
+    height: 400px;
+    margin-bottom: 50px;
+  }
+  .small-box {
+    margin: 30px 90px;
+  }
+}
